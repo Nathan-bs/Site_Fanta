@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Product Sans;
+    src: url(fonts/Product\ Sans\ Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body ::-webkit-any(){
+    display: none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: orangered;
+}
+
+.nav-container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    z-index: 99;
+}
+.nav-container img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.nav-container a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 50px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 69, 0));
+}
+
+.hero h1{
+    font-size: 25vw;
+    color: #fff;
+}
+
+#fanta{
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+}
+
+#laranja-cortada{
+    position: absolute;
+    width: 15%;
+    top: 10%;
+    left: 32%;
+    z-index: 2;
+} 
+
+#laranja{
+    position: absolute;
+    width: 20%;
+    z-index: 3;
+    top: 55%;
+    right: 30%;
+}
+
+#folha1{
+    position: absolute;
+    width: 18%;
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+}
+
+#folha2{
+    position: absolute;
+    width: 12%;
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+}
+
+#folha3{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+
+/* EDITANDO A SEGUNDA SEÇÃO  */
+
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #4d231c;
+}
+
+.left-side, .right-side{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.left-side svg{
+    margin-top: 50vh;
+    width: 90%;
+    transform: rotateX(50deg);
+}
+
+.right-side h2{
+    color: #fff;
+    font-size: 5vw;
+}
+
+.right-side p{
+    color: #fff;
+    font-size: 1vw;
+    width: 80%;
+}
+
+/* EDITANDO A TERCEORA SEÇÃO  */
+
+.three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 69, 0));
+    gap: 5vh;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    width: 25vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+}
+
+.card h3{
+    margin-top: 45vh;
+    font-size: 3vw;
+    color: #000;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(255, 149, 0);
+    color: #fff;
+    padding: 1vw 2vw;
+}
+
+#cocacola{
+    position: absolute;
+    top: -10%;
+    width: 57%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#pepsi{
+    position: absolute;
+    top: -15%;
+    width: 85%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.lemon{
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    width: 25vw;
+    transform: translate(-50%, 0%);
+}
