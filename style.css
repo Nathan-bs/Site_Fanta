@@ -12,6 +12,7 @@
 
 html,
 body{
+    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
 }
@@ -31,15 +32,14 @@ body ::-webkit-any(){
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #4d231c;
     width: 100%;
     height: 10vh;
     z-index: 99;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-.nav-container img{
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
-}
+
 .nav-container a{
     color: white;
     text-decoration: none;
@@ -48,13 +48,21 @@ body ::-webkit-any(){
 
 .nav-menu{
     display: flex;
+    align-items: center;
     gap: 50px;
+}
+
+#logo_fanta{
+    height: 60%;
+    object-fit: cover;
 }
 
 .hero{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
+    margin: 0;
     width: 100%;
     height: 100vh;
     background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 69, 0));
@@ -114,6 +122,8 @@ body ::-webkit-any(){
 
 .two{
     display: flex;
+    margin: 0;
+    overflow-x: hidden;
     width: 100%;
     height: 100vh;
     background: #4d231c;
@@ -150,6 +160,7 @@ body ::-webkit-any(){
 
 .three {
     display: flex;
+    overflow-x: hidden;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -188,16 +199,16 @@ body ::-webkit-any(){
 
 #cocacola{
     position: absolute;
-    top: -10%;
-    width: 57%;
+    top: -5%;
+    width: 102%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
-#pepsi{
+#sprite{
     position: absolute;
-    top: -15%;
-    width: 85%;
+    top: -9%;
+    width: 65%;
     left: 50%;
     transform: translate(-50%, 0%);
 }

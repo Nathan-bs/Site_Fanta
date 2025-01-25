@@ -3,20 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>🍊Fanta</title>
+        <link rel="icon" href="imagens/logo_fanta.png" type="image/png">
+        <title>Fanta</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="main">
             <nav class="nav-container">
-                <a href="#">Logo</a>
+                <img id="logo_fanta" src="imagens/logo_fanta.png">
                 <div class="nav-menu">
-                    <a href="#">Home</a>
-                    <a href="#">Descrição</a>
-                    <a href="#">Produtos</a>
-                    <a href="#">Instagram</a>
+                    <a href="#" id="link-home">Home</a>
+                    <a href="#" id="link-descricao">Descrição</a>
+                    <a href="#" id="link-produtos">Produtos</a>
+                    <a href="https://www.instagram.com/fantabrasil/" target="_blank">Instagram</a>
                 </div>
-                <img src="imagens/menu.png">
             </nav>
             <div class="hero">
                 <h1>FANTA</h1>
@@ -46,19 +46,14 @@
                     </svg>
                 </div>
                 <div class = "right-side">
-                    <h2>Flavour Update</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quasi explicabo soluta corrupti, magni, illo aut in est aliquid culpa officiis veniam itaque delectus expedita consequuntur, 
-                        ad repellat atque laborum deleniti?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Error dolorem quisquam natus ipsam architecto impedit velit fuga sequi beatae laborum, 
-                        iure nemo sapiente blanditiis cupiditate nulla consequatur iusto magni labore!</p>
+                    <h2>Fanta</h2>
+                    <p>A Fanta é um refrigerante de laranja criado na Alemanha em 1940 e hoje é uma das marcas globais da The Coca-Cola Company, assim como a Sprite, lançada em 1961 com sabor de limão. Ambas pertencem ao vasto portfólio da Coca-Cola, que as posiciona como alternativas populares aos refrigerantes de cola, atendendo a diferentes preferências ao redor do mundo.</p>
                 </div>
             </div>
             <div class = "three">
                 <div class="card">
                     <img class="lemon lemon1" src="imagens/lemon.webp" />
-                    <img id="cocacola" src="imagens/cocacola.png" />
+                    <img id="cocacola" src="imagens/lata_coca.png" />
                     <h3>Coca-Cola</h3>
                     <button>Comprar agora</button>
                 </div>
@@ -68,8 +63,8 @@
                 </div>
                 <div class="card">
                     <img class="lemon lemon2" src="imagens/lemon.webp" />
-                    <img id="pepsi" src="imagens/pepsi.png" />
-                    <h3>Pepsi</h3>
+                    <img id="sprite" src="imagens/lata_sprite.png" />
+                    <h3>Sprite</h3>
                     <button>Comprar agora</button>
                 </div>
             </div>
@@ -86,8 +81,8 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
-        <script src="script.js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

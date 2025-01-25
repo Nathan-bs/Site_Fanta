@@ -3,7 +3,7 @@ var timeline = gsap.timeline({
         trigger: '.two',
         start: '0% 95%',
         end: '70% 50%',
-        scrub: true,
+        scrub: 1.5,
         //markers: true, //DEPURAÇÂO
     },
 });
@@ -30,7 +30,7 @@ timeline.to(
     '#laranja',
     {
         width: '15%',
-        top: '160%',
+        top: '165%',
         right: '10%',
     },
     'orange'
@@ -60,8 +60,8 @@ var timeline2 = gsap.timeline({
     scrollTrigger:{
         trigger: '.three',
         start: '0% 95%',
-        end: '20% 50%', //50% da altura do topo da tela quando estiver a 20% da seção three
-        scrub: true,
+        end: '0% 50%', //50% da altura do topo da tela quando estiver a 20% da seção three
+        scrub: 1.5,
         //markers: true, //DEPURAÇÂO
     },
 });
@@ -94,7 +94,7 @@ timeline2.from(
 ) 
 
 timeline2.from(
-    '#pepsi',{
+    '#sprite',{
         rotate: '90deg',
         left: '100%',
         top: '110%',
@@ -121,3 +121,30 @@ timeline2.to(
     },
     'ca'
 )
+
+document.getElementById('link-descricao').addEventListener('click', function (e) {
+    e.preventDefault();
+    gsap.to(window, {
+        duration: 1, // Duração da rolagem (1 segundo)
+        scrollTo: { y: ".two", offsetY: 50 }, // Alvo da rolagem
+        ease: "power2.inOut" // Suavidade
+    });
+});
+
+document.getElementById('link-produtos').addEventListener('click', function (e) {
+    e.preventDefault();
+    gsap.to(window, {
+        duration: 1, // Duração da rolagem (1 segundo)
+        scrollTo: { y: ".three", offsetY: 50 }, // Alvo da rolagem
+        ease: "power2.inOut" // Suavidade
+    });
+});
+
+document.getElementById('link-home').addEventListener('click', function (e) {
+    e.preventDefault();
+    gsap.to(window, {
+        duration: 1, // Duração da rolagem (1 segundo)
+        scrollTo: { y: ".hero", offsetY: 50 }, // Alvo da rolagem
+        ease: "power2.inOut" // Suavidade
+    });
+});
