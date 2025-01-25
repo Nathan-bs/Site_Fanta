@@ -220,3 +220,7 @@ body ::-webkit-any(){
     width: 25vw;
     transform: translate(-50%, 0%);
 }
+
+button {
+    cursor: pointer;
+}
